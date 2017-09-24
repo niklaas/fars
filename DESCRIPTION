@@ -10,5 +10,10 @@ LazyData: true
 Suggests: knitr,
     rmarkdown,
     testthat
+Imports:
+    dplyr,
+    tidyr,
+    maps,
+    readr
 VignetteBuilder: knitr
 RoxygenNote: 6.0.1
