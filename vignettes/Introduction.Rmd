@@ -17,3 +17,17 @@ regarding fatal injuriees suffered in motor vehicle traffic crashed.
 The two functions at hand are `fars_summarize_years` and `fars_map_state`.
 While the former allows viewing a summary of incidents by month in tabular
 form, the latter plots a map of incidents.
+
+To show a summary of years 2014 and 2015 in tabular form issue the following:
+
+```{r}
+fars_summarize_years(years = 2014:2015)
+```
+
+`fars_map_state` allows you to plot the incidents within a specified state on a
+map. For example, to do this for `state.num == 1` and year 2015, you can use
+the function the following way:
+
+```{r}
+fars_map_state(state.num = 1, year = 2015)
+```
