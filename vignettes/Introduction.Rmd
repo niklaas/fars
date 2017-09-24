@@ -21,6 +21,7 @@ form, the latter plots a map of incidents.
 To show a summary of years 2014 and 2015 in tabular form issue the following:
 
 ```{r}
+library("fars")
 fars_summarize_years(years = 2014:2015)
 ```
 
