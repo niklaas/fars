@@ -1,8 +1,12 @@
 Package: fars
-Title: What the Package Does (one line, title case)
+Title: Analyses data by FARS
 Version: 0.0.0.9000
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Authors@R: person("Niklaas", "Baudet von Gersdorff", email = "me@niklaas.eu", role = c("aut", "cre"))
+Description: 
+    Provides functions to analyse data by the US National Highway Traffic
+    Safety Administration's Fatality Analysis Reporting System (FARS). The
+    functions include reading the data, printing a structured overview and
+    mapping incidents.
 Depends: R (>= 3.2.3)
 License: What license is it under?
 Encoding: UTF-8
