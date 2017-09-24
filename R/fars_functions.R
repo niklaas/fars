@@ -27,7 +27,7 @@ fars_read <- function(filename) {
 #'
 #' @param year The year of interest provided as either character or numeric
 #' 
-#' @return A character vector  in the following form: \code{accident_<year>.csv.bz2
+#' @return A character vector  in the following form: \code{accident_<year>.csv.bz2}
 #'
 #' @examples
 #' fars_filename <- make_filename(2015)
@@ -95,7 +95,7 @@ fars_summarize_years <- function(years) {
 #'
 #' If there is data for a specified state.num, \code{fars_map_state} plots
 #' incidents on a map. The canvas limit is set to greater than 900 Longitude
-#' and 90 Latitude. If there is no data for a specified \code{state.num\} the
+#' and 90 Latitude. If there is no data for a specified \code{state.num} the
 #' function exits with an error.
 #'
 #' @param state.num State number as one-dimensional numeric vector
