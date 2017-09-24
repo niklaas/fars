@@ -51,7 +51,7 @@ make_filename <- function(year) {
 #' fars_year_data <- fars_read_years(2013)
 #' fars_year_data <- fars_read_years(c(2013, 2015))
 #'
-#' @importFrom dplyr mutate select
+#' @importFrom dplyr mutate select %>%
 fars_read_years <- function(years) {
         lapply(years, function(year) {
                 file <- make_filename(year)
@@ -75,7 +75,7 @@ fars_read_years <- function(years) {
 #' 
 #' @return A data.frame that provides the amount of monthly data per year
 #'
-#' @importFrom dplyr group_by summarize
+#' @importFrom dplyr group_by summarize %>%
 #' @importFrom tidyr spread
 #'
 #' @examples
