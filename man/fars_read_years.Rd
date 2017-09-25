@@ -19,7 +19,9 @@ is no data for the specified year available, the function will return an
 error.
 }
 \examples{
+\dontrun{
 fars_year_data <- fars_read_years(2013)
 fars_year_data <- fars_read_years(c(2013, 2015))
+}
 
 }

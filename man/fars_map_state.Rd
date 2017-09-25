@@ -18,6 +18,8 @@ and 90 Latitude. If there is no data for a specified \code{state.num} the
 function exits with an error.
 }
 \examples{
+\dontrun{
 fars_map_state(1, 2013)
+}
 
 }

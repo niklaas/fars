@@ -17,6 +17,8 @@ Reads data from a csv file. If the file does not exist, the function will
 stop and return an error.
 }
 \examples{
+\dontrun{
 fars_data <- fars_read("accident_2015.csv.bz2")
+}
 
 }

@@ -16,5 +16,7 @@ A character vector  in the following form: \code{accident_<year>.csv.bz2}
 Generates a filename including the provided \code{year}.
 }
 \examples{
+\dontrun{
 fars_filename <- make_filename(2015)
+}
 }

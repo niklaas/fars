@@ -17,7 +17,9 @@ For the specified years this function summarizes their data i.e., it return
 how many incidients occured in each month.
 }
 \examples{
+\dontrun{
 fars_summary <- fars_summarize_years(2013)
 fars_summary <- fars_summarize_years(c(2013, 2014))
+}
 
 }
