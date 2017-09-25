@@ -8,7 +8,9 @@
 #' @return A data.frame object containing the data read from \code{filename}
 #'
 #' @examples
+#' \dontrun{
 #' fars_data <- fars_read("accident_2015.csv.bz2")
+#' }
 #'
 #' @importFrom dplyr tbl_df
 #' @importFrom readr read_csv
@@ -30,7 +32,9 @@ fars_read <- function(filename) {
 #' @return A character vector  in the following form: \code{accident_<year>.csv.bz2}
 #'
 #' @examples
+#' \dontrun{
 #' fars_filename <- make_filename(2015)
+#' }
 make_filename <- function(year) {
         year <- as.integer(year)
         sprintf("accident_%d.csv.bz2", year)
@@ -48,8 +52,10 @@ make_filename <- function(year) {
 #'  data.frame with columns `MONTH` and `year`
 #'
 #' @examples
+#' \dontrun{
 #' fars_year_data <- fars_read_years(2013)
 #' fars_year_data <- fars_read_years(c(2013, 2015))
+#' }
 #'
 #' @importFrom dplyr mutate select %>%
 fars_read_years <- function(years) {
@@ -79,8 +85,10 @@ fars_read_years <- function(years) {
 #' @importFrom tidyr spread
 #'
 #' @examples
+#' \dontrun{
 #' fars_summary <- fars_summarize_years(2013)
 #' fars_summary <- fars_summarize_years(c(2013, 2014))
+#' }
 #' 
 #' @export
 fars_summarize_years <- function(years) {
@@ -102,7 +110,9 @@ fars_summarize_years <- function(years) {
 #' @inheritParams make_filename
 #'
 #' @examples
+#' \dontrun{
 #' fars_map_state(1, 2013)
+#' }
 #'
 #' @importFrom dplyr filter
 #' @importFrom graphics points
